@@ -1,15 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AllServices from './components/AllServices'; // Import AllServices component
-import Layout from './components/layout'; // Corrected path to Layout
-import Home from './components/Home'; // Corrected path to Layout
+import OurTeam from './components/OurTeam'; 
+import Layout from './components/Layout'; // Ensure correct path
+import Game from './components/Game'; // Ensure correct path
+import OurServices from './components/OurServices'; // Ensure correct path
+import HomePage from './components/HomePage'; // Ensure correct path
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Wrap routes with Layout to keep Header/Footer across pages */}
-        <Route path="/home" element={<Layout><Home /></Layout>} /> {/* Home page */}
-        <Route path="/services" element={<Layout><AllServices /></Layout>} /> {/* All Services page */}
+        {/* Ensure all routes are wrapped in the Layout component */}
+        <Route path="/" element={<Layout><HomePage /></Layout>} />
+
+        <Route path="/our-services" element={<Layout><OurServices /></Layout>} />
+        <Route path="/our-team" element={<Layout><OurTeam /></Layout>} />
+        <Route path="/game" element={<Layout><Game /></Layout>} />
       </Routes>
     </Router>
   );

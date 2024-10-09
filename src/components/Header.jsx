@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -16,8 +16,8 @@ const Header = () => {
                 <a href="tel:1-847-555-5555">1-800-267-0000</a>
               </div>
               <div className="header-info">
-                <i className="icon-placeholder2"></i>1560 Holden Street San
-                Diego, CA 92139
+                <i className="icon-placeholder2"></i>
+                1560 Holden Street San Diego, CA 92139
               </div>
               <div className="header-info">
                 <i className="icon-black-envelope"></i>
@@ -68,136 +68,24 @@ const Header = () => {
                   >
                     <ul className="navbar-nav">
                       <li className="nav-item">
-                        <a className="nav-link" href="about.html">
-                          About Us
-                        </a>
+                        <Link className="nav-link" to="/game">
+                          Game Screen
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
-                          href="services.html"
-                          className="nav-link dropdown-toggle"
-                          data-toggle="dropdown"
-                        >
-                          Services
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <Link className="dropdown-item" to="/services">
-                              All Services
-                            </Link>
-                          </li>
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="service-page.html"
-                            >
-                              Service Page
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="prices.html">
-                              Prices
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="shop-listing.html"
-                            >
-                              Online Shop
-                            </a>
-                          </li>
-                        </ul>
+                        <Link className="nav-link" to="/our-services">
+                          Our Services
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
-                          href="gallery.html"
-                          className="nav-link dropdown-toggle"
-                          data-toggle="dropdown"
-                        >
-                          Smiles Gallery
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="gallery.html">
-                              Creative Gallery
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="gallery-simple.html"
-                            >
-                              Simple Gallery
-                            </a>
-                          </li>
-                        </ul>
+                        <Link className="nav-link" to="/our-team">
+                          Our Team
+                        </Link>
                       </li>
                       <li className="nav-item">
-                        <a
-                          href="our-specialist.html"
-                          className="nav-link dropdown-toggle"
-                          data-toggle="dropdown"
-                        >
-                          Our Specialists
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="our-specialist.html"
-                            >
-                              All Specialists
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="doctor-page.html"
-                            >
-                              Doctor Page
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="schedule.html">
-                              Schedule Table
-                            </a>
-                          </li>
-                        </ul>
-                      </li>{" "}
-                      <li className="nav-item">
-                        <a className="nav-link" href="testimonials.html">
-                          Testimonials
-                        </a>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          href="blog.html"
-                          className="nav-link dropdown-toggle"
-                          data-toggle="dropdown"
-                        >
-                          Blog
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a className="dropdown-item" href="blog.html">
-                              Blog Posts
-                            </a>
-                          </li>
-                          <li>
-                            <a className="dropdown-item" href="blog-grid.html">
-                              Blog Grid Posts
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="dropdown-item"
-                              href="blog-post-page.html"
-                            >
-                              Blog Single Post
-                            </a>
-                          </li>
-                        </ul>
+                        <Link className="nav-link" to="/iPhone-apple">
+                          IPhone Apple
+                        </Link>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="contact.html">
