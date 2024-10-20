@@ -68,6 +68,11 @@ const Header = () => {
                   >
                     <ul className="navbar-nav">
                       <li className="nav-item">
+                        <Link className="nav-link" to="/">
+                          Home Page
+                        </Link>
+                      </li>
+                      <li className="nav-item">
                         <Link className="nav-link" to="/game">
                           Game Screen
                         </Link>
@@ -83,73 +88,13 @@ const Header = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" to="/iPhone-apple">
-                          IPhone Apple
+                        <Link className="nav-link" to="/contact-us">
+                          ContactUs
                         </Link>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="contact.html">
-                          Contacts
-                        </a>
                       </li>
                     </ul>
                   </div>
                 </nav>
-              </div>
-              <div className="header-cart cart-toggler">
-                <a href="#" className="icon icon-cart"></a>
-                <span className="badge">2</span>
-                <div className="header-cart-dropdown">
-                  <div className="prd-sm">
-                    <div className="prd-sm-img">
-                      <a href="shop-product.html">
-                        <img
-                          src="Project/images/product/prd-sm-1.jpg"
-                          className="img-fluid"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="prd-sm-info">
-                      <h3>
-                        <a href="shop-product.html">
-                          Active Wow Teeth Whitening Charcoal Powder
-                        </a>
-                      </h3>
-                      <div className="price">$38.88</div>
-                    </div>
-                    <div className="prd-sm-delete">
-                      <i className="icon-close"></i>
-                    </div>
-                  </div>
-                  <div className="prd-sm">
-                    <div className="prd-sm-img">
-                      <a href="shop-product.html">
-                        <img
-                          src="Project/images/product/prd-sm-2.jpg"
-                          className="img-fluid"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="prd-sm-info">
-                      <h3>
-                        <a href="shop-product.html">Electric Toothbrush</a>
-                      </h3>
-                      <div className="price">$39.97</div>
-                    </div>
-                    <div className="prd-sm-delete">
-                      <i className="icon-close"></i>
-                    </div>
-                  </div>
-                  <div className="header-cart-total">
-                    <div className="float-left">Total:</div>
-                    <div className="float-right">$78.85</div>
-                  </div>
-                  <a href="#" className="btn btn-sm btn-hover-fill">
-                    <span>CheckOut</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>

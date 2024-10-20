@@ -124,7 +124,6 @@ main {
   background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
 }
 
-
 .team__member__display--orange {
   background-color: #fbab7e;
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
@@ -246,7 +245,7 @@ main {
     height: 100%;
     background-color: orange;
     border-radius: 3px;
-    content: '';
+    content: "";
   }
 }
 
@@ -278,7 +277,7 @@ main {
   background-color: orange;
   border-radius: 3px;
   animation: bounce 2.2s ease infinite alternate;
-  content: '';
+  content: "";
 }
 
 span {

@@ -2,18 +2,22 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
+// Define base path for GitHub Pages
+const BASE_PATH = "/react-center/models/";
+
 export const TeamMember = ({ model = "Casual", ...props }) => {
   const group = useRef();
-  const { scene, animations } = useGLTF(`/models/${model}.gltf`);
+  const { scene, animations } = useGLTF(`${BASE_PATH}${model}.gltf`);
   const { actions, mixer } = useAnimations(animations, group);
   const [animation, setAnimation] = useState("Idle");
+
   useEffect(() => {
     actions[animation].reset().fadeIn(0.2).play();
     return () => actions[animation].fadeOut(0.2);
-  }, [animation]);
+  }, [animation, actions]);
 
   useEffect(() => {
-    // We set clampWhenFinished and loop to LoopOnce to have the "finished" event fire when the animation is done playing
+    // Set clampWhenFinished and loop to LoopOnce to trigger the "finished" event
     if (actions["Wave"]) {
       actions["Wave"].clampWhenFinished = true;
       actions["Wave"].loop = THREE.LoopOnce;
@@ -27,6 +31,7 @@ export const TeamMember = ({ model = "Casual", ...props }) => {
     mixer.addEventListener("finished", onAnimationFinished);
     return () => mixer.removeEventListener("finished", onAnimationFinished);
   }, [mixer]);
+
   return (
     <group ref={group} {...props} onPointerEnter={() => setAnimation("Wave")}>
       <primitive object={scene} />
@@ -34,6 +39,7 @@ export const TeamMember = ({ model = "Casual", ...props }) => {
   );
 };
 
-useGLTF.preload("/models/Casual.gltf");
-useGLTF.preload("/models/Formal.gltf");
-useGLTF.preload("/models/Suit.gltf");
+// Preload models with the correct base path
+useGLTF.preload(`${BASE_PATH}Casual.gltf`);
+useGLTF.preload(`${BASE_PATH}Formal.gltf`);
+useGLTF.preload(`${BASE_PATH}Suit.gltf`);

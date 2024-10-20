@@ -1,8 +1,11 @@
 import { useGLTF } from "@react-three/drei";
 import { useMemo } from "react";
 
+// Use the correct base path for GitHub Pages
+const BASE_PATH = "/react-center/models/";
+
 export const Item = ({ model = "Casual", ...props }) => {
-  const { scene } = useGLTF(`/models/${model}.glb`);
+  const { scene } = useGLTF(`${BASE_PATH}${model}.glb`);
   const copiedScene = useMemo(() => scene.clone(), [scene]); // To be able to reuse the same object
 
   return (
@@ -12,13 +15,14 @@ export const Item = ({ model = "Casual", ...props }) => {
   );
 };
 
-useGLTF.preload("/models/Classroom.glb");
-useGLTF.preload("/models/MacBook Pro.glb");
-useGLTF.preload("/models/Oculus Controller.glb");
-useGLTF.preload("/models/Phone.glb");
-useGLTF.preload("/models/VR Headset.glb");
-useGLTF.preload("/models/Flower_1.glb");
-useGLTF.preload("/models/Flower_2.glb");
-useGLTF.preload("/models/Flower_3.glb");
-useGLTF.preload("/models/Flower_4.glb");
-useGLTF.preload("/models/Flower_5.glb");
+// Preload models with the correct base path
+useGLTF.preload(`${BASE_PATH}Classroom.glb`);
+useGLTF.preload(`${BASE_PATH}MacBook Pro.glb`);
+useGLTF.preload(`${BASE_PATH}Oculus Controller.glb`);
+useGLTF.preload(`${BASE_PATH}Phone.glb`);
+useGLTF.preload(`${BASE_PATH}VR Headset.glb`);
+useGLTF.preload(`${BASE_PATH}Flower_1.glb`);
+useGLTF.preload(`${BASE_PATH}Flower_2.glb`);
+useGLTF.preload(`${BASE_PATH}Flower_3.glb`);
+useGLTF.preload(`${BASE_PATH}Flower_4.glb`);
+useGLTF.preload(`${BASE_PATH}Flower_5.glb`);
