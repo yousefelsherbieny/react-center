@@ -88,6 +88,16 @@ const Header = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
+                        <Link className="nav-link" to="/mac-model">
+                          MacModel
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/shoe-app">
+                          ShoeApp
+                        </Link>
+                      </li>
+                      <li className="nav-item">
                         <Link className="nav-link" to="/contact-us">
                           ContactUs
                         </Link>
