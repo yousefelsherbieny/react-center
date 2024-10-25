@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>{" "}
       {/* Render children here (i.e., routed content) */}
-      <Footer />
     </>
   );
 };
