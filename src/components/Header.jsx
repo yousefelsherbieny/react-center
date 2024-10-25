@@ -87,14 +87,10 @@ const Header = () => {
                           Our Team
                         </Link>
                       </li>
+
                       <li className="nav-item">
-                        <Link className="nav-link" to="/mac-model">
-                          MacModel
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/shoe-app">
-                          ShoeApp
+                        <Link className="nav-link" to="/product">
+                          Product
                         </Link>
                       </li>
                       <li className="nav-item">

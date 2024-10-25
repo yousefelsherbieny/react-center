@@ -167,7 +167,7 @@ function Picker() {
         color={snap.items[snap.current]}
         onChange={(color) => (state.items[snap.current] = color)}
       />
-      <h1>{snap.current}</h1>
+      <h6>{snap.current}</h6>
     </div>
   );
 }
