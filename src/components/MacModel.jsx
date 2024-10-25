@@ -2,10 +2,16 @@
 import * as THREE from "three";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, useGLTF, ContactShadows } from "@react-three/drei";
+import {
+  Environment,
+  useGLTF,
+  ContactShadows,
+  OrbitControls,
+} from "@react-three/drei";
 import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import { a as web } from "@react-spring/web";
+import { useControls } from "leva"; // استيراد Leva
 
 const BASE_PATH = "/react-center/models/";
 
@@ -95,7 +101,16 @@ function Model({ open, hinge, ...props }) {
 
 export default function MacModel() {
   const [open, setOpen] = useState(false);
+  const [orbitEnabled, setOrbitEnabled] = useState(true); // حالة لتفعيل أو تعطيل OrbitControls
   const props = useSpring({ open: Number(open) });
+
+  // Leva panel للتحكم في الـ OrbitControls
+  useControls({
+    OrbitControls: {
+      value: orbitEnabled,
+      onChange: (value) => setOrbitEnabled(value),
+    },
+  });
 
   return (
     <web.main
@@ -114,6 +129,8 @@ export default function MacModel() {
         click
       </web.h3>
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
+        {orbitEnabled && <OrbitControls />}{" "}
+        {/* التحكم في تفعيل أو تعطيل OrbitControls */}
         <three.pointLight
           position={[10, 10, 10]}
           intensity={1.5}
