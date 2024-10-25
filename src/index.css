@@ -313,7 +313,7 @@ body {
   background: #f0f0f0;
 }
 
-h3 {
+h4 {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -328,7 +328,7 @@ h3 {
 
 /* TShirt */
 
-h1 {
+h6 {
   position: absolute;
   top: 40%; /* اجعل العنوان فوق الـ Picker */
   left: 30%; /* اضبط اليمين واليسار لتتناسب مع الحذاء */

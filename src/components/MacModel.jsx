@@ -103,7 +103,7 @@ export default function MacModel() {
         background: props.open.to([0, 1], ["#f0f0f0", "#1e76bd"]),
       }} /* #d25578 */
     >
-      <web.h3
+      <web.h4
         style={{
           opacity: props.open.to([0, 1], [1, 0]),
           transform: props.open.to(
@@ -112,7 +112,7 @@ export default function MacModel() {
         }}
       >
         click
-      </web.h3>
+      </web.h4>
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <three.pointLight
           position={[10, 10, 10]}

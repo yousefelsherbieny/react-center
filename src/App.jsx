@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import ContactUs from "./components/ContactUs";
 import MacModel from "./components/MacModel";
 import ShoeApp from "./components/Shoe";
+import Product from "./components/Product";
 
 const App = () => {
   return (
@@ -67,6 +68,14 @@ const App = () => {
           element={
             <Layout>
               <ShoeApp />
+            </Layout>
+          }
+        />
+        <Route
+          path="/product"
+          element={
+            <Layout>
+              <Product />
             </Layout>
           }
         />
