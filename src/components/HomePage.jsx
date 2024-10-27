@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
+import ThreeDScene from "./ThreeDScene";
 
 const HomePage = () => {
-    return (
-        <div>
-            Welcome Home Page
-        </div>
-    );
-}
+  return <ThreeDScene />;
+};
 
 export default HomePage;
