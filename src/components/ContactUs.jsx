@@ -5,10 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const BASE_PATH = "/react-center/models/";
 
-const Model = () => {
-  // Update the model path to point to the correct file location
+const Model = ({ position }) => {
   const { scene } = useGLTF(`${BASE_PATH}Suit.gltf`);
-  return <primitive object={scene} />;
+  return <primitive object={scene} position={position} />;
 };
 
 const ContactUs3D = () => {
@@ -18,12 +17,27 @@ const ContactUs3D = () => {
     message: "",
   });
 
+  const [backgroundColor, setBackgroundColor] = useState("#87CEEB");
+
+  const [modelPosition, setModelPosition] = useState({ x: 0, y: 0, z: 0 });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
+  };
+
+  const handleBackgroundChange = (e) => {
+    setBackgroundColor(e.target.value);
+  };
+
+  const handlePositionChange = (axis, value) => {
+    setModelPosition((prevPosition) => ({
+      ...prevPosition,
+      [axis]: parseFloat(value),
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -91,12 +105,42 @@ const ContactUs3D = () => {
 
         <div className="col-md-6">
           <h2 className="text-center mb-4">3D Model Viewer</h2>
-          <div className="model-container" style={{ height: "400px" }}>
-            <Canvas>
+          <div className="mb-3">
+            <label htmlFor="background-color" className="form-label">
+              Background Color:
+            </label>
+            <select
+              id="background-color"
+              className="form-select"
+              onChange={handleBackgroundChange}
+              value={backgroundColor}
+            >
+              <option value="#87CEEB">Sky Blue</option>
+              <option value="#FFFFFF">White</option>
+              <option value="#000000">Black</option>
+              <option value="#FF5733">Coral</option>
+            </select>
+          </div>
+
+          <div
+            className="model-container"
+            style={{
+              height: "500px",
+              width: "500px",
+              backgroundColor: backgroundColor,
+            }}
+          >
+            <Canvas camera={{ position: [0, 1, 3], fov: 40 }}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[10, 10, 5]} intensity={1} />
-              <Model />
-              <OrbitControls />
+              <Model
+                position={[
+                  modelPosition.x,
+                  (modelPosition.y = "-0.8"),
+                  modelPosition.z,
+                ]}
+              />
+              <OrbitControls minDistance={1.5} maxDistance={5} />
             </Canvas>
           </div>
         </div>

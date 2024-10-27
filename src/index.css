@@ -349,3 +349,37 @@ h6 {
   width: 90px !important;
   height: 90px !important;
 }
+
+/* Car */
+a {
+  color: black;
+}
+
+a {
+  pointer-events: all;
+  color: white;
+  text-decoration: none;
+}
+
+svg {
+  fill: white;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 5s ease 0.5s forwards;
+}
+.logo {
+  transform: scale(1.7); /* تكبير بنسبة 1.5 */
+  transition: transform 0.3s ease;
+}

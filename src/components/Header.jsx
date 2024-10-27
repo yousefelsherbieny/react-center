@@ -53,9 +53,9 @@ const Header = () => {
             <div className="col-lg-auto col-lg-2 d-flex align-items-lg-center">
               <a href="index-2.html" className="header-logo">
                 <img
-                  src="Project/images/logo.png"
+                  src="Project/images/logo33.png"
                   alt=""
-                  className="img-fluid"
+                  className="img-fluid logo"
                 />
               </a>
             </div>

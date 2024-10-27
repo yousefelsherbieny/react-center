@@ -7,7 +7,7 @@ import { Experience } from "./Experience";
 function Game() {
   // Replace with your actual Convai API key and character ID
   const convaiApiKey = "6cf9f66c23b56064f8b75308ede13a43";
-  const characterId = "53ae690a-5085-11ef-8886-42010a7be01";
+  const characterId = "53ae690a-5085-11ef-8886-42010a7be011";
 
   // Use the defined variables in the useConvaiClient hook
   const { client } = useConvaiClient(characterId, convaiApiKey);
