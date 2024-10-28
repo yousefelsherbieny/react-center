@@ -59,6 +59,50 @@ const Product = () => {
                 </p>
               </div>
             </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-card-photo">
+                  <Link to="/watch">
+                    <img
+                      src="Project/images/watch.png"
+                      className="img-fluid"
+                      alt="watch"
+                    />
+                  </Link>
+                </div>
+                <h5 className="service-card-name">
+                  <a>Shoes</a>
+                </h5>
+                <div className="h-decor"></div>
+                <p>
+                  Healthy eating is one of the best things you can do to prevent
+                  and control health problems such as heart disease, high blood
+                  pressure, type 2 diabetes, and some types of cancer.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-card-photo">
+                  <Link to="/car">
+                    <img
+                      src="Project/images/car.png"
+                      className="img-fluid"
+                      alt="car"
+                    />
+                  </Link>
+                </div>
+                <h5 className="service-card-name">
+                  <a>Shoes</a>
+                </h5>
+                <div className="h-decor"></div>
+                <p>
+                  Healthy eating is one of the best things you can do to prevent
+                  and control health problems such as heart disease, high blood
+                  pressure, type 2 diabetes, and some types of cancer.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
