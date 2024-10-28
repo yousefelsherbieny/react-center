@@ -1,8 +1,8 @@
 import React from "react";
-import ThreeDScene from "./ThreeDScene";
+import Hero from "./Hero";
 
 const HomePage = () => {
-  return <ThreeDScene />;
+  return <Hero />;
 };
 
 export default HomePage;

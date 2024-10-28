@@ -354,25 +354,6 @@ h6 {
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-body {
-  overscroll-behavior-y: none;
-  background: #f5f5f5;
-  font-family: "Inter var", sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  color: black;
-}
-
 a {
   color: black;
 }
@@ -385,4 +366,44 @@ a {
 
 svg {
   fill: black;
+}
+
+.custom-button {
+  background-color: rgb(50, 246, 247); /* لون قريب من الأزرق السماوي */
+  color: #000; /* لون النص */
+  width: 100px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  transition: transform 0.5s, background-color 0.5s;
+  margin-top: 150px;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.text-primar {
+  color: rgb(50, 246, 247); /* لون اسم Yousef */
+}
+
+@media (min-width: 576px) {
+  .custom-button {
+    font-size: 1rem;
+    width: 200px;
+  }
+}
+
+.hero-section {
+  background-image: url("/hero-bck.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 576px) {
+  .hero-section p {
+    width: 550px;
+  }
 }
