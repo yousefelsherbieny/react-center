@@ -11,6 +11,8 @@ import ShoeApp from "./components/Shoe";
 import Product from "./components/Product";
 import Watcho from "./components/Watch";
 import { Car } from "./components/Car";
+import Character from "./components/Character";
+import Model from "./components/Model";
 
 const App = () => {
   return (
@@ -94,6 +96,22 @@ const App = () => {
           element={
             <Layout>
               <Car />
+            </Layout>
+          }
+        />
+        <Route
+          path="/character"
+          element={
+            <Layout>
+              <Character />
+            </Layout>
+          }
+        />
+        <Route
+          path="/model-mac"
+          element={
+            <Layout>
+              <Model />
             </Layout>
           }
         />

@@ -115,7 +115,7 @@ export default function MacModel() {
   return (
     <web.main
       style={{
-        background: props.open.to([0, 1], ["#f0f0f0", "#1e76bd"]),
+        background: props.open.to([0, 1], ["#f0f0f0", "#fff"]),
       }} /* #d25578 */
     >
       <web.h4
@@ -134,7 +134,7 @@ export default function MacModel() {
         <three.pointLight
           position={[10, 10, 10]}
           intensity={1.5}
-          color={props.open.to([0, 1], ["#f0f0f0", "#1e76bd"])}
+          color={props.open.to([0, 1], ["#f0f0f0", "#fff"])}
         />
         <Suspense fallback={null}>
           <group

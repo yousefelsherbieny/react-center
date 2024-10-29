@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.14.0",
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^1.0.6",
     "@pmndrs/assets": "^1.7.0",
     "@pmndrs/branding": "^0.0.8",
     "@react-spring/three": "^9.7.5",

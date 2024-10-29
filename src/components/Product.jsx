@@ -8,8 +8,9 @@ const Product = () => {
         <div className="container text-center mb-4">
           <h1>Our Products</h1>
           <p className="max-670 mt-3 mx-md-auto">
-            Our programs customize the weight loss plan to the patient’s needs.
-            All plans are medically supervised and under physician’s care.
+            Explore our diverse range of products, each crafted to meet your
+            unique needs and enhance your lifestyle. Browse and find what suits
+            you best!
           </p>
         </div>
 
@@ -31,9 +32,8 @@ const Product = () => {
                 </h5>
                 <div className="h-decor"></div>
                 <p>
-                  Healthy eating is one of the best things you can do to prevent
-                  and control health problems such as heart disease, high blood
-                  pressure, type 2 diabetes, and some types of cancer.
+                  Discover comfort and style with our premium shoes, designed to
+                  support your every step with cutting-edge materials.
                 </p>
               </div>
             </div>
@@ -53,9 +53,9 @@ const Product = () => {
                 </h5>
                 <div className="h-decor"></div>
                 <p>
-                  Healthy eating is one of the best things you can do to prevent
-                  and control health problems such as heart disease, high blood
-                  pressure, type 2 diabetes, and some types of cancer.
+                  Enhance productivity and creativity with our MacModel,
+                  featuring top-notch performance and sleek design for modern
+                  users.
                 </p>
               </div>
             </div>
@@ -66,18 +66,17 @@ const Product = () => {
                     <img
                       src="Project/images/watch.png"
                       className="img-fluid"
-                      alt="watch"
+                      alt="Watch"
                     />
                   </Link>
                 </div>
                 <h5 className="service-card-name">
-                  <a>Shoes</a>
+                  <a>Watch</a>
                 </h5>
                 <div className="h-decor"></div>
                 <p>
-                  Healthy eating is one of the best things you can do to prevent
-                  and control health problems such as heart disease, high blood
-                  pressure, type 2 diabetes, and some types of cancer.
+                  Stay stylishly on time with our sophisticated watches,
+                  combining elegance with advanced functionality.
                 </p>
               </div>
             </div>
@@ -88,18 +87,59 @@ const Product = () => {
                     <img
                       src="Project/images/car.png"
                       className="img-fluid"
-                      alt="car"
+                      alt="Car"
                     />
                   </Link>
                 </div>
                 <h5 className="service-card-name">
-                  <a>Shoes</a>
+                  <a>Car</a>
                 </h5>
                 <div className="h-decor"></div>
                 <p>
-                  Healthy eating is one of the best things you can do to prevent
-                  and control health problems such as heart disease, high blood
-                  pressure, type 2 diabetes, and some types of cancer.
+                  Experience the thrill of driving with our state-of-the-art
+                  cars, designed for performance and comfort on every journey.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-card-photo">
+                  <Link to="/character">
+                    <img
+                      src="Project/images/Character.png"
+                      className="img-fluid"
+                      alt="Character"
+                    />
+                  </Link>
+                </div>
+                <h5 className="service-card-name">
+                  <a>Rings</a>
+                </h5>
+                <div className="h-decor"></div>
+                <p>
+                  Elevate your style with our unique rings, crafted with
+                  precision and designed to make a statement on any occasion.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="service-card">
+                <div className="service-card-photo">
+                  <Link to="/model-mac">
+                    <img
+                      src="Project/images/model-mac.png"
+                      className="img-fluid"
+                      alt="Model Mac"
+                    />
+                  </Link>
+                </div>
+                <h5 className="service-card-name">
+                  <a>Model</a>
+                </h5>
+                <div className="h-decor"></div>
+                <p>
+                  Discover the future of technology with our latest models,
+                  designed to optimize your tech experience.
                 </p>
               </div>
             </div>

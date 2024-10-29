@@ -407,3 +407,67 @@ svg {
     width: 550px;
   }
 }
+
+/* Car */
+a {
+  color: black;
+}
+
+a {
+  pointer-events: all;
+  color: white;
+  text-decoration: none;
+}
+
+svg {
+  fill: white;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 5s ease 0.5s forwards;
+}
+.logo {
+  transform: scale(1.7); /* تكبير بنسبة 1.5 */
+  transition: transform 0.3s ease;
+}
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 334px;
+  height: 216px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 10px;
+  width: 668px;
+  height: 432px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
