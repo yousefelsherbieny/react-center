@@ -125,16 +125,16 @@ const Product = () => {
             <div className="col-md-6 col-lg-4">
               <div className="service-card">
                 <div className="service-card-photo">
-                  <Link to="/model-mac">
+                  <Link to="/main-canvas">
                     <img
-                      src="Project/images/model-mac.png"
+                      src="Project/images/phone.png"
                       className="img-fluid"
                       alt="Model Mac"
                     />
                   </Link>
                 </div>
                 <h5 className="service-card-name">
-                  <a>Model</a>
+                  <a>iPhone 15 Pro Max</a>
                 </h5>
                 <div className="h-decor"></div>
                 <p>

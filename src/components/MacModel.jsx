@@ -1,4 +1,3 @@
-// src/MacModel.js
 import * as THREE from "three";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
@@ -11,7 +10,8 @@ import {
 import { useSpring } from "@react-spring/core";
 import { a as three } from "@react-spring/three";
 import { a as web } from "@react-spring/web";
-import { useControls } from "leva"; // استيراد Leva
+import { useControls } from "leva";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const BASE_PATH = "/react-center/models/";
 
@@ -101,10 +101,10 @@ function Model({ open, hinge, ...props }) {
 
 export default function MacModel() {
   const [open, setOpen] = useState(false);
-  const [orbitEnabled, setOrbitEnabled] = useState(true); // حالة لتفعيل أو تعطيل OrbitControls
+  const [orbitEnabled, setOrbitEnabled] = useState(true);
   const props = useSpring({ open: Number(open) });
+  const navigate = useNavigate(); // Initialize navigate function
 
-  // Leva panel للتحكم في الـ OrbitControls
   useControls({
     OrbitControls: {
       value: orbitEnabled,
@@ -116,8 +116,31 @@ export default function MacModel() {
     <web.main
       style={{
         background: props.open.to([0, 1], ["#f0f0f0", "#fff"]),
-      }} /* #d25578 */
+      }}
     >
+      {/* Back Button */}
+      <button
+        className="btn btn-link text-black position-absolute top-0 start-0 m-3"
+        style={{ zIndex: 1000 }}
+        onClick={() => navigate(-1)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          style={{ width: "24px", height: "24px" }}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 19.5l-7.5-7.5 7.5-7.5"
+          />
+        </svg>
+        Back
+      </button>
+
       <web.h4
         style={{
           opacity: props.open.to([0, 1], [1, 0]),
@@ -129,8 +152,7 @@ export default function MacModel() {
         click
       </web.h4>
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
-        {orbitEnabled && <OrbitControls />}{" "}
-        {/* التحكم في تفعيل أو تعطيل OrbitControls */}
+        {orbitEnabled && <OrbitControls />}
         <three.pointLight
           position={[10, 10, 10]}
           intensity={1.5}

@@ -12,7 +12,7 @@ import Product from "./components/Product";
 import Watcho from "./components/Watch";
 import { Car } from "./components/Car";
 import Character from "./components/Character";
-import Model from "./components/Model";
+import MainCanvas from "./components/MainCanvas";
 
 const App = () => {
   return (
@@ -58,14 +58,7 @@ const App = () => {
             </Layout>
           }
         />
-        <Route
-          path="/mac-model"
-          element={
-            <Layout>
-              <MacModel />
-            </Layout>
-          }
-        />
+        <Route path="/mac-model" element={<MacModel />} />
         <Route
           path="/shoe-app"
           element={
@@ -107,14 +100,7 @@ const App = () => {
             </Layout>
           }
         />
-        <Route
-          path="/model-mac"
-          element={
-            <Layout>
-              <Model />
-            </Layout>
-          }
-        />
+        <Route path="/main-canvas" element={<MainCanvas />} />
       </Routes>
     </Router>
   );
