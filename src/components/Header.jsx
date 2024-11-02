@@ -35,6 +35,9 @@ const Header = () => {
                 <a href="#" className="hovicon">
                   <i className="icon-google-plus-circle"></i>
                 </a>
+                <a href="#" className="hovicon">
+                  <i className="icon-instagram-circle"></i>
+                </a>
               </span>
             </div>
           </div>
