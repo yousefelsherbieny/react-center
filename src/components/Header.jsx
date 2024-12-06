@@ -13,30 +13,41 @@ const Header = () => {
             <div className="col-auto d-flex align-items-center">
               <div className="header-phone">
                 <i className="icon-telephone"></i>
-                <a href="tel:1-847-555-5555">1-800-267-0000</a>
+                <a href="tel:1-847-555-5555">+201018245734</a>
               </div>
-              <div className="header-info">
-                <i className="icon-placeholder2"></i>
-                1560 Holden Street San Diego, CA 92139
+              <div className="header-phone">
+                <i className="icon-telephone"></i>
+                <a href="tel:1-847-555-5555">+971561432193</a>
               </div>
               <div className="header-info">
                 <i className="icon-black-envelope"></i>
-                <a href="mailto:info@dentco.net">info@dentco.net</a>
+                <a href="mailto:yousefelsherbieny547@gmail.com">
+                  yousefelsherbieny547@gmail.com
+                </a>
               </div>
             </div>
             <div className="col-auto ml-auto d-flex align-items-center">
               <span className="header-social">
-                <a href="#" className="hovicon">
-                  <i className="icon-facebook-logo-circle"></i>
-                </a>
-                <a href="#" className="hovicon">
-                  <i className="icon-twitter-logo-circle"></i>
-                </a>
-                <a href="#" className="hovicon">
+                <a
+                  href="mailto:yousefelsherbieny547@gmail.com"
+                  className="hovicon"
+                >
                   <i className="icon-google-plus-circle"></i>
                 </a>
-                <a href="#" className="hovicon">
+
+                <a
+                  href="https://www.instagram.com/boudy.arts?igsh=MTdqdW04ZjI4NDh2OQ=="
+                  className="hovicon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="icon-instagram-circle"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@abdallahhosny8168"
+                  className="hovicon"
+                >
+                  <i className="icon-facebook-logo-circle"></i>
                 </a>
               </span>
             </div>
@@ -89,6 +100,11 @@ const Header = () => {
                       <li className="nav-item">
                         <Link className="nav-link" to="/product">
                           Product
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/cart">
+                          Cart
                         </Link>
                       </li>
                       <li className="nav-item">
