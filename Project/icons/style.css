@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'dentco';
-  src:  url('fonts/dentco46b5.eot?vy6ic0');
-  src:  url('fonts/dentco46b5.eot?vy6ic0#iefix') format('embedded-opentype'),
-    url('fonts/dentco46b5.ttf?vy6ic0') format('truetype'),
-    url('fonts/dentco46b5.woff?vy6ic0') format('woff'),
-    url('fonts/dentco46b5.svg?vy6ic0#dentco') format('svg');
+  font-family: "dentco";
+  src: url("fonts/dentco46b5.eot?vy6ic0");
+  src: url("fonts/dentco46b5.eot?vy6ic0#iefix") format("embedded-opentype"),
+    url("fonts/dentco46b5.ttf?vy6ic0") format("truetype"),
+    url("fonts/dentco46b5.woff?vy6ic0") format("woff"),
+    url("fonts/dentco46b5.svg?vy6ic0#dentco") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'dentco' !important;
+  font-family: "dentco" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
